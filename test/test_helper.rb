@@ -12,7 +12,7 @@ begin
   ]
 
   SimpleCov.add_filter(excluded_test_paths)
-  SimpleCov.minimum_coverage(0)
+  SimpleCov.minimum_coverage(90)
   SimpleCov.start
 rescue LoadError
   puts 'SimpleCov not found'
