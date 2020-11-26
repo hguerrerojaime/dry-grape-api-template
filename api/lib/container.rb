@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'sequel'
-require 'i18n'
 require 'logger'
 require 'dry/system/container'
 require_relative 'environment'
