@@ -5,8 +5,9 @@ Uses basic mix of frameworks/libraries to setup production-ready applications
  - dry-rb bundle: as IOC (checkout <a href="https://dry-rb.org">https://dry-rb.org</a> for details)
  - Sequel: database handler (remove it if you don't need it)
 
-TODO:
-`Update documentation for exception handling and service methods`
+`TODO: Update documentation for exception handling and service methods`
+
+Note: if you can contribute in improving this template, by all means fork it and send a PR
 
 ## Setup
 ```bash
