@@ -3,7 +3,6 @@
 module Dao
   # Foo Data Access Object
   class Foo
-    include Singleton
     include Import[
       database: :database
     ]

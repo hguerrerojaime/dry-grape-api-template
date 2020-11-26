@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require './test/integration/helper'
+require './test/test_helper'
 
 SUBJECT_ENDPOINT = '/v1/foo'
 
-describe SUBJECT_ENDPOINT do
+describe "INTEGRATION::#{SUBJECT_ENDPOINT}" do
   include APITest
 
   describe 'POST' do

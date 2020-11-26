@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require './test/unit/helper'
+require './test/test_helper'
 
 HEALTH_CHECK_ENDPOINT = '/health_check'
 

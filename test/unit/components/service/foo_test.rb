@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require './test/unit/helper'
+require './test/test_helper'
 require './api/components/service/foo'
 
 FooService = Service::Foo
@@ -9,8 +9,12 @@ describe FooService do
   include MockHelper
 
   before do
-    inject_mock!('dao.foo', mock)
-    @service = FooService.instance
+    @service = FooService.new(foo_dao: mock)
+  end
+
+  # Important to disable mocks after each test
+  after do
+    unstub_injectables!
   end
 
   describe 'register' do

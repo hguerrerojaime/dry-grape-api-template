@@ -4,7 +4,6 @@ module Service
   # Foo Data Access Object
   class Foo
     extend BusinessClass
-    include Singleton
     include Import[
       foo_dao: 'dao.foo'
     ]

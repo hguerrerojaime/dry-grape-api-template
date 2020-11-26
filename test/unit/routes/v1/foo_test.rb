@@ -1,15 +1,19 @@
 # frozen_string_literal: true
 
-require './test/unit/helper'
+require './test/test_helper'
 
 FOO_ENDPOINT = '/v1/foo'
 
 describe FOO_ENDPOINT do
   include APITest
-  include MockHelper
 
   before do
     inject_mock!('service.foo', mock)
+  end
+
+  # Important to disable mocks after each test
+  after do
+    unstub_injectables!
   end
 
   describe 'POST' do
