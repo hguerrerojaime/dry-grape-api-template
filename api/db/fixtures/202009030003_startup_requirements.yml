@@ -1,0 +1,51 @@
+requirements:
+  - name: author_name
+    label: '{author_name}'
+    type: string
+    description: Author's Name
+    requirement_category_id: author
+  - name: author_last_name_a
+    label: '{author_last_name_a}'
+    type: string
+    description: Author's first last name
+    requirement_category_id: author
+  - name: author_last_name_b
+    label: '{author_last_name_b}'
+    type: string
+    description: Author's second last name
+    requirement_category_id: author
+  - name: author_birth_date
+    label: '{author_birth_date}'
+    type: date
+    description: Author's birth date
+    requirement_category_id: author
+  - name: author_birth_place
+    label: '{author_birth_place}'
+    type: string
+    description: Author's birth place
+    requirement_category_id: author
+  - name: author_nationality
+    label: '{author_nationality}'
+    type: country
+    description: Author's nationality
+    requirement_category_id: author
+  - name: author_full_address
+    label: '{author_full_address}'
+    type: address
+    description: Full address
+    requirement_category_id: author
+  - name: author_contact_phone
+    label: '{author_contact_phone}'
+    type: phone
+    description: Contact phone
+    requirement_category_id: author
+  - name: piece_name
+    label: '{piece_name}'
+    type: string
+    description: Piece name
+    requirement_category_id: piece
+  - name: piece_artifact
+    label: '{piece_artifact}'
+    type: resource
+    description: Piece
+    requirement_category_id: piece
